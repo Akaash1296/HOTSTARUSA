@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="ito" value="30"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="tests.TC001">
+        <methods>
+          <include name="clickAllMovies"/>
+          <include name="signIn"/>
+          <include name="signOut"/>
+          <include name="OpenApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- tests.TC001 -->
+      <class name="tests.TC002">
+        <methods>
+          <include name="signIn"/>
+          <include name="clickSports"/>
+          <include name="signOut"/>
+          <include name="OpenApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- tests.TC002 -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
